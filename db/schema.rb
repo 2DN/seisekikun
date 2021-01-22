@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_22_141234) do
+ActiveRecord::Schema.define(version: 2021_01_22_144604) do
 
   create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "japanese"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_01_22_141234) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "title"
     t.index ["user_id"], name: "index_scores_on_user_id"
   end
 

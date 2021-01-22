@@ -1,6 +1,7 @@
 class ScoresController < ApplicationController
   before_action :authenticate_user!
   def index
+    @scores = Score.all
   end
 
   def new
@@ -16,10 +17,15 @@ class ScoresController < ApplicationController
     end
   end
 
+  def show
+    @score = Score.find(params[:id])
+  end
+
+
   private
 
   def score_params
-    params.require(:score).permit(:japanese, :math, :science, :social, :english).merge(user_id: current_user.id)
+    params.require(:score).permit(:title, :japanese, :math, :science, :social, :english).merge(user_id: current_user.id)
   end
 
 end

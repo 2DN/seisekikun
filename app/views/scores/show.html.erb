@@ -1,0 +1,12 @@
+<div>
+  <p><%= @score.title %>の結果</p>
+  <ul>
+    <li>国語：<%= @score.japanese %></li>
+    <li>数学：<%= @score.math %></li>
+    <li>理科：<%= @score.science %></li>
+    <li>社会：<%= @score.social %></li>
+    <li>英語：<%= @score.english %></li>
+  </ul>
+</div>
+
+<%= link_to "戻る", root_path %>

@@ -1,2 +1,3 @@
-<h1>Scores#index</h1>
-<p>Find me in app/views/scores/index.html.erb</p>
+<div>こんにちは<%= current_user.name %>さん</div>
+<div><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></div>
+

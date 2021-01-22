@@ -16,6 +16,10 @@ class ScoresController < ApplicationController
     end
   end
 
+  def show
+  end
+  
+
   private
 
   def score_params

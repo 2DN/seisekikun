@@ -1,3 +1,10 @@
 <div>こんにちは<%= current_user.name %>さん</div>
-<div><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></div>
 
+<div>
+  <ul>
+    <li><%= link_to "成績を入力する", "#" %></li>
+    <li><%= link_to "成績を見る", "#" %></li>
+    <li><%= link_to "ユーザー設定", "#" %></li>
+    <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+  </ul>
+</div>

@@ -1,6 +1,7 @@
 class ScoresController < ApplicationController
   before_action :authenticate_user!
   def index
+    @scores = Score.includes(:user)
   end
 
   def new
@@ -18,7 +19,7 @@ class ScoresController < ApplicationController
 
   def show
   end
-  
+
 
   private
 

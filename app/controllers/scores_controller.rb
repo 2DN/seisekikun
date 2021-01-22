@@ -1,7 +1,7 @@
 class ScoresController < ApplicationController
   before_action :authenticate_user!
   def index
-    @scores = Score.includes(:user)
+    @scores = Score.all
   end
 
   def new

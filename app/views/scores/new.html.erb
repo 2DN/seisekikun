@@ -1,6 +1,7 @@
 <div>
 <%= form_with model:@score, url: scores_path, locale: true do |f| %>
 
+<%= f.text_field :title, placeholder: "テスト名" %>
 <%= f.text_field :japanese, placeholder: "国語" %>
 <%= f.text_field :math, placeholder: "数学" %>
 <%= f.text_field :science, placeholder: "理科" %>

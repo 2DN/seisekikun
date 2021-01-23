@@ -3,7 +3,7 @@
 <div>
   <ul>
     <li><%= link_to "成績を入力する", new_score_path %></li>
-    <li><%= link_to "成績を見る", "#" %></li>
+    <li>成績を見る</li>
     <% @scores.each do |score| %>
     <% if score.user == current_user %>
     <%= link_to score.title, score_path(score) %>
